@@ -3,12 +3,29 @@
 <head>
 <meta charset='utf-8'>
 <style>
+#name {
+	border: solid 2px blue;
+	width: 130px;
+	padding: 5px;
+	text-align: center;
+	margin-left: 280px;
+	margin-top: 10px;
+}
 table, th, tr, td {
 	border: solid 1px black;
 	border-collapse: collapse;
 	padding: 8px;
 }
-
+table {
+	width: 700px;
+	background-color: rgb(223, 227, 235);
+}
+tr {
+	height: 60px;
+}
+td {
+	width: 100px;
+}
 a {
 	text-decoration: none;
 }
@@ -18,13 +35,17 @@ a {
 	width: 170px;
 }
 a:hover { text-decoration: none; color: yellow}
+#first {
+	height: 10px;
+	text-align: left;
+}
 </style>
 </head>
 <body>
-<h3>이주형 시간표</h3>
+<h3 id="name">이주형 시간표</h3>
 
 <table>
-	<tr>
+	<tr id="first">
 		<th colspan="7"> 2021년 2학년 1학기</th>
 	</tr>
 	<tr>
