@@ -3,12 +3,47 @@
 <head>
 <meta charset='utf-8'>
 <style>
+*{
+	padding: 0;
+	margin: 0;
+}
+header {
+	width: 1918px;
+	height: 100px;
+	background-color: beige;
+	border: solid 1px black;
+}
+nav {
+	width: 1918px;
+	height: 60px;
+	border: solid 1px green;
+	background-color: rgb(223, 227, 235);
+}
+section {
+	background-image: url(img/sale_bg.png);
+	float: left;
+	width: 1300px;
+	margin-left: 301px;
+	height: 700px;
+}
+aside {
+	width: 300px;
+	height: 700px;
+}
+#right{
+	float: right;
+}
+footer {
+	height: 90px;
+	background-color: rgb(245, 244, 244);
+}
 #name {
-	width: 130px;
+	width: 500px;
 	padding: 5px;
 	text-align: center;
-	margin-left: 280px;
+	margin-left: 695px;
 	margin-top: 10px;
+	font-size: 50px;
 }
 table, th, tr, td {
 	border: solid 1px black;
@@ -17,6 +52,7 @@ table, th, tr, td {
 	font-size: 14px;
 }
 table {
+	margin-left: 300px;
 	width: 700px;
 	background-color: rgb(223, 227, 235);
 }
@@ -30,9 +66,11 @@ a {
 	text-decoration: none;
 }
 .title {
+	font-weight: bold;
 	border: solid 3px slategray;
 	background-color: rgb(175, 192, 209);
-	width: 170px;
+	padding: 9px;
+	margin-left: 20px;
 }
 a:hover { text-decoration: none; color: yellow}
 #first {
@@ -42,44 +80,92 @@ a:hover { text-decoration: none; color: yellow}
 #day {
 	height: 13px;
 }
+ul {
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 400px;
+}
+li {
+	display: inline;
+}
+#hosoe {
+	float: left;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+#int {
+	margin-left: 110px;
+	width: 300px;
+}
 </style>
 </head>
 <body>
-<h3 id="name">이주형 시간표</h3>
+<header>
+	<h3 id="name">이주형 시간표</h3>
+</header>
 
-<table>
-	<tr id="first">
-		<th colspan="7"> 2021년 2학년 1학기</th>
-	</tr>
-	<tr id="day">
-		<th></th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
-	</tr>
-	<tr>
-		<th>1교시<br>9:30~10:20</th> <td></td> <td></td> <td></td> <td bgcolor="khaki">웹프로그래밍</td> <td></td> 
-	</tr>
-	<tr>
-		<th>2교시<br>10:30~11:20</th> <td rowspan="2" bgcolor="khaki">웹프로그래밍</td> <td></td> <td></td> <td rowspan="3" bgcolor="powderblue">경영정보시스템</td> <td></td> 
-	</tr>
-	<tr>
-		<th>3교시<br>11:30~12:20</th> <td></td> <td rowspan="2" bgcolor="peachpuff">대학영어회화2</td> <td></td> 
-	</tr>
-	<tr>
-		<th>4교시<br>12:30~13:20</th> <td></td> <td></td> <td></td>   
-	</tr>
-	<tr>
-		<th>5교시<br>13:30~14:20</th> <td></td> <td rowspan="3" bgcolor="steelblue">경영통계</td> <td></td> <td></td> <td bgcolor="Yellowgreen">채플</td> 
-	</tr>
-	<tr>
-		<th>6교시<br>14:30~15:20</th> <td></td> <td rowspan="3" bgcolor="sandybrown">부동산과 생활경제</td>  <td rowspan="2" bgcolor="beige">디지털콘텐츠<br>비즈니스개론<br>(창업)</td> <td></td> 
-	</tr>
-	<tr>
-		<th>7교시<br>15:30~16:20</th> <td></td> <td bgcolor="thistle">자기이해와개발1</td>  
-	</tr>
-	<tr>
-		<th>8교시<br>16:30~17:20</th> <td></td> <td bgcolor="beige">디지털콘텐츠<br>비즈니스개론<br>(창업)</td> <td></td> <td></td> 
-	</tr>
-</table>
+<nav>
+	<ul>
+		<li><a href="회원가입.html" class="title">[회원가입]</a></li>
+		<li><a href="루바토 펜션 안내.html" class="title">[루바토 펜션 안내]</a></li>
+		<li><a href="호서 행사 안내.html" class="title">[호서 페스티벌]</a></li>
+		<li><a href="호서 야간 개장.html" class="title">[호서 야간 개장]</a></li>
+		<li><a href="Sale Information.html" class="title">[세일 안내장]</a></li>
+		<li><a href="May.html" class="title">[월간일정표]</a></li>
+		<li><a href="Sales List.html" class="title">[치킨 판매 목록]</a></li>
+	</ul>	
+</nav>
 
+<section>
+	<table>
+		<tr id="first">
+			<th colspan="7"> 2021년 2학년 1학기</th>
+		</tr>
+		<tr id="day">
+			<th></th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
+		</tr>
+		<tr>
+			<th>1교시<br>9:30~10:20</th> <td></td> <td></td> <td></td> <td bgcolor="khaki">웹프로그래밍</td> <td></td> 
+		</tr>
+		<tr>
+			<th>2교시<br>10:30~11:20</th> <td rowspan="2" bgcolor="khaki">웹프로그래밍</td> <td></td> <td></td> <td rowspan="3" bgcolor="powderblue">경영정보시스템</td> <td></td> 
+		</tr>
+		<tr>
+			<th>3교시<br>11:30~12:20</th> <td></td> <td rowspan="2" bgcolor="peachpuff">대학영어회화2</td> <td></td> 
+		</tr>
+		<tr>
+			<th>4교시<br>12:30~13:20</th> <td></td> <td></td> <td></td>   
+		</tr>
+		<tr>
+			<th>5교시<br>13:30~14:20</th> <td></td> <td rowspan="3" bgcolor="steelblue">경영통계</td> <td></td> <td></td> <td bgcolor="Yellowgreen">채플</td> 
+		</tr>
+		<tr>
+			<th>6교시<br>14:30~15:20</th> <td></td> <td rowspan="3" bgcolor="sandybrown">부동산과 생활경제</td>  <td rowspan="2" bgcolor="beige">디지털콘텐츠<br>비즈니스개론<br>(창업)</td> <td></td> 
+		</tr>
+		<tr>
+			<th>7교시<br>15:30~16:20</th> <td></td> <td bgcolor="thistle">자기이해와개발1</td>  
+		</tr>
+		<tr>
+			<th>8교시<br>16:30~17:20</th> <td></td> <td bgcolor="beige">디지털콘텐츠<br>비즈니스개론<br>(창업)</td> <td></td> <td></td> 
+		</tr>
+	</table>
+</section>
+
+<aside id="right">
+	<a href="May.html"><img src="img/5월.PNG" width="300px"></a>
+</aside>
+
+<aside id="left">
+	
+</aside>
+
+<footer>
+	<img src="img/hoseo.png" width="80px" id="hosoe">
+	<div id="int">
+	<span>호서대학교<br>경영대학<br>디지털기술경영학과<br>20180610 이주형</span>
+	</div>
+</footer>
+<!--
 <a href="회원가입.html"><h3 class="title">[회원가입]</h3></a>
 <a href="루바토 펜션 안내.html"><h3 class="title">[루바토 펜션 안내]</h3></a>
 <a href="호서 행사 안내.html"><h3 class="title">[호서 페스티벌]</h3></a>
@@ -87,7 +173,7 @@ a:hover { text-decoration: none; color: yellow}
 <a href="Sale Information.html"><h3 class="title">[세일 안내장]</h3></a>
 <a href="May.html"><h3 class="title">[월간일정표]</h3></a>
 <a href="Sales List.html"><h3 class="title">[치킨 판매 목록]</h3></a>
-
+-->
 
 </body>
 </html>
