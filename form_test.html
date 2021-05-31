@@ -2,22 +2,75 @@
 <html>
 <head>
 <meta charset='utf-8'>
+<style>
+    .over_bg {
+    background-color: black;
+
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tx_box{
+    float: left;
+    width: 50%;
+    height: 50%;
+    max-width: 316px;
+    max-height: 316px;
+    clear: both;
+    flex-direction: column;
+    top: 20%;
+    left: 50%;
+    margin: 50px 0 0 50px;
+}
+.tx_box p {
+    font-size: 18px;
+    color: #666666;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tx_box input {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.tx_box button {
+    width: 90%;
+    height: 40px;
+    background-color: #4e73df;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+.tx_box button.ok {
+    margin-bottom: 8px;
+}
+.tx_box button.ok:hover {
+    background: #224abe;
+}
+.tx_box button.cancel {
+    margin-bottom: 8px;
+    background-color: #F44336;
+}
+.tx_box button.cancel:hover {
+    background: #E53935;
+}
+</style>
 </head>
 <body>
-<form>
-    아 이 디: <input type="text"><br>
-    비밀번호: <input type="password"> 
-
-    <hr>
-    정보공개:
-    <input type="radio" name="info"> 공개
-    <input type="radio" name="info"> 비공개
-<br>
-    취미:
-    <input type="checkbox"> 배드민턴
-    <input type="checkbox"> 탁구
-    <input type="checkbox"> 게임
-    <input type="checkbox"> 축구
-</form>
+    <div class="over_bg">
+    </div>
+    <div class="tx_box">
+        <p>팝업창입니다.</p>
+        <input type="text" name="" class="">
+        <button class="ok">확인</button>
+        <button class="cancel">취소</button>
+    </div>
 </body>
 </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>포토 아카데미</title>
+<style>
+/*  기본틀 만들기 */
+
+* {padding: 0px; margin:0px;}
+
+header {
+      width: 1140px;
+      height: 100px;
+      margin: 0px auto 0px auto;
+}
+#main_img {
+      width: 1400px;
+      height: 281px;
+      margin: 0px auto 0px auto;
+}
+#contents {
+      width: 1140px;
+      height: 700px;
+      margin: 0px auto 0px auto;
+}
+#sub_menu {
+      margin-top: 20px;
+      width: 234px;
+      float: left;
+}
+#main_contents {
+      margin-top: 15px;
+      margin-left: 20px;
+      width: 880px;
+      float: left;
+}
+footer {
+      background-color: rgb(45, 41, 42);
+      width: 1400px;
+      height: 140px;
+      margin: 0px auto 0px auto;
+}
+
+
+
+/*  header stylesheet  */
+#header_img {
+      float: left;
+      padding-top: 20px;
+      margin-left: 20px;
+}
+#top_menu {
+      float: right;
+      margin-right: 10px;
+      margin-top: 10px;
+      font-size: 12px;
+}
+#main_menu li {
+      list-style-type: none; 
+      display: inline;
+      padding-left: 80px;
+}
+#main_menu {
+      float: right;
+      clear: right;
+      margin-right: 10px;
+      margin-top: 24px;
+      font-weight: bold;
+      font-family: '맑은 고딕';
+}
+
+
+
+/*  contents stylesheet  */
+#pic {
+      width: 220px;
+      height: 30px;
+      padding: 10px 0px 0px 10px;
+      background-color: rgb(81, 110, 128);
+      color: rgb(81, 200, 165);
+}
+#sub_menu li {
+      list-style-type: none; 
+      border-bottom: dotted 1px black;
+      padding: 10px 0px 10px 10px;
+
+}
+#camera {
+      width: 880px;
+      height: 30px;
+      padding: 2px 0px 3px 0px;
+      border-bottom: solid 1px black;
+}
+p {
+      font-size: 12px;
+      line-height: 20px;
+}
+#p1 {
+      margin-top: 30px;
+}
+#dslr {
+      margin-left: 240px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+}
+#main_contents li {
+      line-height: 30px;
+      list-style-type: none;
+      margin-left: 10px;
+      font-size: 14px;
+}
+
+
+
+/*  footer stylesheet  */
+#footer_img {
+      float: left;
+      width: 140px;
+      margin-left: 140px;
+      padding-top: 40px;
+}
+#footer_list li {    
+      list-style-type: none;
+      color: white;
+}
+#footer_list {
+      float: right;
+      margin-top: 30px;
+      margin-right: 100px;
+      font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div id="header_img">
+      <img src="img2/logo.png">
+</div>
+
+<div id="top_menu">
+      로그인 | 회원가입 | 공지사항
+</div>
+
+<div id="main_menu">
+      <ul>
+            <li>사진이론</li>
+            <li>사진구도</li>
+            <li>사진작가</li>
+            <li>갤러리</li>
+            <li>커뮤니티</li>
+      </ul>
+</div>
+</header>
+
+<section id='main_img'>
+      <img src="img2/main_img.png" width="1400px" height="281px">
+</section>
+
+<section id='contents'>
+     <nav id='sub_menu'>
+            <h3 id="pic">사진이론</h3>
+            <ul>
+                  <li>카메라 동작 원리</li>
+                  <li>무조건 찍어보자!</li>
+                  <li>피사체의 배경</li>
+                  <li>조리개와 심도</li>
+                  <li>카메라 촬영 모드</li>
+            </ul>
+     </nav>
+   
+      <div id='main_contents'>
+            <h3 id="camera">카메라 동작 원리</h3>
+            <p id="p1">DSLR 카메라에서 DSLR은 “Digital Single Lens Reflex”의 약어로써 우리말로는 디지털 일안 반사식 카메라을 의미합니다. DSLR은 디지털 카메라로써 카메라 내부에 들어온 빛이 상단의 펜타프리즘을 통하여 뷰파인더에 맺히게 되어 셔터를 누르기 전에 뷰 파인더를 통하여 피사체를 확인할 수 있게 됩니다.</p>
+		<img src="img2/dslr.png" id="dslr">
+            <p>[그림 1]은 DSLR 카메라에서 셔터를 누르기 전의 상태를 보여주는데 렌즈를 통해 들어오는 빛은 카메라 내부에서 다음과 같은 과정을 거치게 됩니다.</p>
+
+		<ul>
+			<li>① 빛이 카메라 렌즈를 통과합니다.</li>
+			<li>② 빛이 반사 거울에 반사되어 위쪽으로 향합니다.</li>
+			<li>③ 빛이 펜타프리즘 거울에 반사되어 뷰파인더로 향합니다.</li>
+			<li>④ 들어온 빛에 의해 뷰파인터들 통하여 피사체를 볼 수 있습니다.</li>
+		</ul>
+      </div>
+</section>
+
+<footer>
+      <div id="footer_img">
+            <img src="img2/footer_logo.png">
+      </div>
+
+      <div id="footer_list">
+            <ul>
+                  <li>서울시 강남구 삼성동 1234 우:123-1234</li>
+                  <li>TEL:031-123-1234 Email : email@domain.com</li>
+                  <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+                  <li>디지털기술경영학과 웹프로그래밍 20180610 이주형</li>
+            </ul>
+      </div>
+</footer>
+</body>
+
+</html>
